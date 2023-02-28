@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import s from './Switcher.module.scss';
 
-export function Switcher() {
+export const Switcher = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);
 
   function handleToggled() {

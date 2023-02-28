@@ -1,9 +1,9 @@
 import React from 'react'
+import { useForm } from 'react-hook-form';
 
 type Props = {}
 
 export const Form = (props: Props) => {
-  return (
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     console.log(errors);
@@ -17,5 +17,4 @@ export const Form = (props: Props) => {
         <input type="submit" />
         </form>
     );
-  )
 }

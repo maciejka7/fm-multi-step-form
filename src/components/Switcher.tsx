@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
+import s from './Switcher.module.scss';
 
-type Props = {}
+export function Switcher() {
+  const [isToggled, setIsToggled] = useState<boolean>(false);
 
-export const Switcher = (props: Props) => {
+  function handleToggled() {
+    setIsToggled((prevState) => !prevState);
+  }
+
   return (
-    <div>Switcher</div>
-  )
+    <button type="button" className={s.container} onClick={handleToggled}>
+      <div className={`${s.circle} ${isToggled ? s.checked : ''}`} />
+    </button>
+  );
 }

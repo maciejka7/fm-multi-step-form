@@ -1,0 +1,26 @@
+.container {
+    width: 40px;
+    height: 21px;
+    background-color: #04285a;
+    border-radius: 20px;
+    position: relative;
+    padding: unset;
+}
+
+.circle {
+    height: 13px;
+    width: 13px;
+    border-radius: 15px;
+    background-color: #fefdfe;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: all ease-in-out .2s;
+
+
+}
+
+.checked {
+    transform: translateX(19px);
+    
+}

@@ -1,0 +1,26 @@
+@import '../../theme.scss';
+
+.container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.circle {
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+}
+
+.active {
+    background-color: $color-pastel-blue;
+    border-color: $color-pastel-blue;
+    color:$color-marine-blue;
+}

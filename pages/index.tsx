@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { ReactNode, useState } from "react";
 import { Card } from "../src/components/Card/Card";
+import { Steps } from "../src/components/Steps/Steps";
 import { Switcher } from "../src/components/Switcher/Switcher";
 import { Form } from "../src/Form";
 import { MainLayout } from "../src/layouts/MainLayout";
@@ -44,6 +45,7 @@ export default function Home() {
             {state.formProps.component}
           </Card>
         )}
+        <Steps currentStep={formState} numberOfSteps={4} />
       </MainLayout>
     </>
   );
